@@ -328,39 +328,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- Only uncomment for tooltip -->
     <!-- <script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script> -->
-    <script>
-        $(document).ready(function(){
-            $('#myCarousel').carousel({interval: 2000});
-            $('#carouselBtn').click(function() {
-                if ($('#carouselBtn').children('span').hasClass('fa-pause')) {
-                    $('#myCarousel').carousel('pause');
-                    $('#carouselBtn').children('span').removeClass('fa-pause');
-                    $('#carouselBtn').children('span').addClass('fa-play');
-                } else {
-                    $('#myCarousel').carousel('cycle');
-                    $('#carouselBtn').children('span').removeClass('fa-play');
-                    $('#carouselBtn').children('span').addClass('fa-pause');
-                }                
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function (){
-            // $("#loginModal").modal("hide");
-            $("#logIn").click(function(){                
-                $("#loginModal").modal("show");
-            });
-            $("#reserveBtn").click(function(){
-                $("#reserveModal").modal("show");
-            });
-        });
-    </script>
 </body>
 
 </html>
